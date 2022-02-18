@@ -5,7 +5,7 @@ public class Email {
 	private String nomServeur;
 	
 	public Email(String nomUtilisateur, String nomServeur) throws InvalideNom {
-		if(nomUtilisateur.length()!=11) throw new InvalideNom("Le nom d'utilisateur doit etre superieru à 11");
+		if(nomUtilisateur.length()!=11) throw new InvalideNom("Le nom d'utilisateur doit etre superieru ï¿½ 11");
 		this.nomUtilisateur = nomUtilisateur;
 		this.nomServeur = nomServeur;
 	}
@@ -14,7 +14,8 @@ public class Email {
 		return nomUtilisateur;
 	}
 
-	public void setNomUtilisateur(String nomUtilisateur) {
+	public void setNomUtilisateur(String nomUtilisateur) throws InvalideNom{
+		if(nomUtilisateur.length()!=11) throw new InvalideNom("Le nom d'utilisateur doit etre superieru ï¿½ 11");
 		this.nomUtilisateur = nomUtilisateur;
 	}
 
