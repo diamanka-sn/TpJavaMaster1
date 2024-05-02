@@ -3,10 +3,8 @@ package Devoir2020.exercice1;
 public class Carre extends Rectangle {
 	double cote;
 
-	public Carre(double longu, double larg) {
-		super(longu, larg);
-		if (longu == larg)
-			cote = longu;
+	public Carre(double cote, double cote) {
+		super(cote, cote);
 	}
 
 	public double getCote() {
